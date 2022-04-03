@@ -1,0 +1,146 @@
+.footer {
+  background-color: $main-bgc;
+}
+.footer__container {
+  @include size(tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer__left-wrap {
+  margin: 0;
+  width: 235px;
+  @include size(tablet) {
+    width: 340px;
+  }
+  @include size(desktop) {
+    width: auto;
+  }
+}
+.footer__pre-title {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $second-title-color;
+  text-transform: uppercase;
+
+  @include size(tablet) {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  @include size(desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+.footer__title {
+  margin-top: 16px;
+
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  color: $primary-title-color;
+  text-transform: uppercase;
+
+  @include size(tablet) {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+  }
+  @include size(desktop) {
+    font-size: 58px;
+    line-height: 1.375;
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+
+  margin-top: 40px;
+  @include size(tablet) {
+    margin-top: 0;
+  }
+}
+.footer__social-icon {
+  fill: currentColor;
+}
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  color: $second-text-color;
+  background-color: #fea5bb;
+
+  transition: background-color 250ms $casual-cubic;
+
+  @include size(tablet) {
+    width: 34px;
+    height: 34px;
+  }
+}
+.footer__social-link:hover,
+.footer__social-link:focus {
+  background-color: $accent-color;
+}
+
+.footer__contact {
+  margin-top: 40px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+
+  @include size(tablet) {
+    font-size: 14px;
+  }
+  @include size(desktop) {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+}
+.footer__tel {
+  color: $accent-color;
+  text-decoration: none;
+}
+
+.footer__bottom-wrap {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 40px;
+  padding: 8px 0;
+  border-top: 1px solid #e1e1e1;
+
+  @include size(desktop) {
+    margin-top: 60px;
+  }
+}
+.footer__copyright {
+  width: 150px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.02em;
+  color: #907e82;
+  text-align: center;
+
+  @include size(tablet) {
+    width: 100%;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+  }
+}
