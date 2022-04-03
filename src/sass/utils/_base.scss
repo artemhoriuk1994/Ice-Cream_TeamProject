@@ -1,7 +1,9 @@
 html {
   box-sizing: border-box;
 }
-
+body {
+font-family: $main-font;
+}
 *,
 *::before,
 *::after {
@@ -43,8 +45,8 @@ ul {
       width: 768px;
     }
   
-    @media screen and (min-width: 1200px) {
-      width: 12800px;
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
     }
   }
   }
