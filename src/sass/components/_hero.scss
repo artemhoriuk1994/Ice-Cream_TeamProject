@@ -1,8 +1,8 @@
-.hero{
-  background-color: #FFB8CA;
+.hero {
+  background-color: #ffb8ca;
 }
 
-.hero-content{
+.hero-content {
   display: flex;
   position: relative;
 
@@ -20,11 +20,11 @@
 .hero-about {
   padding: 60px 0;
 
-  @include tab{
+  @include tab {
     padding: 20px 0 16px 0;
   }
 
-  @include desk{
+  @include desk {
     padding: 60px 0;
   }
 
@@ -59,7 +59,7 @@
       height: 40px;
     }
 
-    color: #D41443;
+    color: #d41443;
     font-family: 'DM Sans';
     font-weight: 400;
     font-size: 14px;
@@ -75,11 +75,11 @@
       line-height: 1.29;
     }
 
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 20px;
     border: none;
     cursor: pointer;
-  
+
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -109,9 +109,9 @@
     }
   }
 
-  &__item:hover &__btn{
-    background-color: #D41443;
-    color: #FFFFFF;
+  &__item:hover &__btn {
+    background-color: #d41443;
+    color: #ffffff;
   }
 }
 
@@ -136,7 +136,7 @@
       height: 154px;
     }
 
-    @include desk{
+    @include desk {
       width: 213px;
       height: 216px;
     }
@@ -173,12 +173,12 @@
       padding-top: 69px;
     }
     /* or 20px */
-    color: #FFFFFF;
+    color: #ffffff;
     padding-top: 69px;
   }
 }
 
-.hero-elipse{
+.hero-elipse {
   position: absolute;
   left: 517px;
   bottom: 76px;
@@ -200,7 +200,7 @@
   }
 
   border-radius: 50%;
-  background-color: #FFA5BA;
+  background-color: #ffa5ba;
   z-index: 1;
 }
 
@@ -248,7 +248,7 @@
 
   margin-left: auto;
 
-  &__item{
+  &__item {
     position: relative;
     width: 72px;
 
@@ -261,14 +261,14 @@
     }
   }
 
-  &__item + &__item{
+  &__item + &__item {
     margin-top: 15px;
 
     @include tab {
       margin-top: 16px;
     }
 
-    @include desk{
+    @include desk {
       margin-top: 15px;
     }
   }
@@ -289,14 +289,14 @@
       line-height: 1.15;
     }
 
-    color: #D41443;
+    color: #d41443;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     z-index: 1;
-    opacity: .99;
+    opacity: 0.99;
   }
 
-  &__round{
+  &__round {
     position: absolute;
     height: 30px;
     width: 30px;
@@ -312,13 +312,13 @@
     }
 
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     right: 0;
     z-index: 0;
   }
 }
 
-.hero-girl{
+.hero-girl {
   width: 304px;
   height: 241px;
 
