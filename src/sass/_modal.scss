@@ -134,3 +134,30 @@
     width: 96%;
   }
 }
+
+.modal__form {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.form__input {
+  display: block;
+  width: 100%;
+  height: 44px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.form__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(1.3125);
+  text-align: center;
+  width: 161px;
+  color: rgb(255, 255, 255);
+  background-color: $second-btn-color;
+  border-radius: 22px;
+  border: none;
+  padding: 12px 40px;
+}
