@@ -1,0 +1,26 @@
+.hidden-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin-top: 20px;
+
+  @include tab {
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+  }
+
+  @include desk {
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+  }
+
+  border: none;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  fill: #D41443;
+}
