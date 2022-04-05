@@ -319,17 +319,7 @@
         transition: box-shadow 250ms $casual-cubic;
     }
 
-    &--secondary {
-        color: $second-btn-color;
-        background-color: $primary-btn-color;
-
-        &:hover,
-        &:focus {
-            background-color: $hover-btn-color;
-            transition: box-shadow 250ms $casual-cubic,
-                background-color 250ms $casual-cubic;
-        }
-    }
+    
 
     &:last-child {
         margin-top: 10px;
@@ -352,10 +342,33 @@
         padding-left: 35px;
     }
 
+    &--secondary {
+       padding-left: 32px;
+       padding-right: 48px;
+       @include size (tablet){
+           padding-left: 37px;
+           padding-right: 56px;
+       }
+       @include size (desktop) {
+           padding-left: 39px;
+           padding-right: 58px;
+       }
+        color: $second-btn-color;
+        background-color: $primary-btn-color;
+    
+    
+        &:hover,
+        &:focus {
+            background-color: $hover-btn-color;
+            transition: box-shadow 250ms $casual-cubic,
+                background-color 250ms $casual-cubic;
+        }
+    }
     &__icon {
         position: absolute;
         right: 18px;
-        top: 18px;
+        top: 16px;
+        fill: currentColor;
 
         @include size (tablet) {
             right: 34px;
@@ -364,6 +377,16 @@
         @include size (desktop) {
             right: 36px;
         }
+    }
+    &__icon--icon-second {
+        right: 31px;
+        @include size (tablet) {
+            right: 38px;
+        }
+        @include size (desktop) {
+            right: 40px;
+        }
+
     }
 }
 
