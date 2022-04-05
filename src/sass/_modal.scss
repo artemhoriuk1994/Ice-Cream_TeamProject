@@ -5,6 +5,9 @@
   height: 100vh;
   left: 0px;
   top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
   transition-property: opacity, visibility;
   transition-duration: 250ms;
@@ -20,15 +23,22 @@
 .modal {
   position: absolute;
   z-index: 60;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   width: 100%;
-  height: 100%;
+
   padding: 30px 20px;
   color: $second-text-color;
   background-color: $mobile-bgc;
 
+  @media screen and (max-width: 479px) {
+    height: 100%;
+  }
+
   @media screen and (min-width: 480px) {
     width: 90%;
-    height: 90%;
+    max-height: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -90,6 +100,7 @@
   line-height: 21px;
   color: $second-text-color;
   text-transform: uppercase;
+  margin-bottom: 30px;
 
   @include size(tablet) {
     font-size: 26px;
@@ -100,4 +111,53 @@
     font-size: 30px;
     line-height: 1.13;
   }
+}
+
+.modal__container {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.modal__text {
+  // font-family: $main-font;
+  font-style: 14px;
+  margin-bottom: 20px;
+}
+
+.modal__map {
+  display: block;
+  width: 100%;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 96%;
+  }
+}
+
+.modal__form {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.form__input {
+  display: block;
+  width: 100%;
+  height: 44px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.form__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(1.3125);
+  text-align: center;
+  width: 161px;
+  color: rgb(255, 255, 255);
+  background-color: $second-btn-color;
+  border-radius: 22px;
+  border: none;
+  padding: 12px 40px;
 }
