@@ -98,7 +98,7 @@
   width: 54px;
   background-size: 54px 40px;
   background-position: top left;
-  background-image: url("../images/sprite.svg#icon-lapki");
+  background-image: url("./images/sprite.svg#icon-lapki");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: -10px;
@@ -223,7 +223,7 @@
 }
 
 .slick-dots li.slick-active button {
-  background-image: url("../images/sprite.svg#home");
+  background-image: url("./images/sprite.svg#home");
   background-color: $second-text-color;
   background-repeat: no-repeat;
   background-position: 0 0;
