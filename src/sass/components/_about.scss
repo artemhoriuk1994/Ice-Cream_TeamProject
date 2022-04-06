@@ -66,11 +66,6 @@
   }
 }
 
-.container__pic {
-  width: 280px;
-  height: 280px;
-}
-
 .container__text {
   font-family: 'DM Sans';
   font-style: normal;
@@ -121,10 +116,12 @@
   align-items: center;
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
-  color: #d41443;
   border-radius: 22px;
+  color: #d41443;
   padding-left: 37px;
   padding-right: 56px;
+  cursor: pointer;
+  border: 0;
 
   @media screen and (min-width: 768px) {
     font-weight: 700;
@@ -134,26 +131,22 @@
 }
 
 .container__description {
+
   @media screen and (min-width: 768px) {
     width: 334px;
-    padding-left: 32px;
+    margin-left: 32px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 463px;
-    padding-left: 139px;
+    margin-left: 139px;
   }
+}
+.container__pic {
+  align-items: baseline;
 }
 
 .container__becground {
-  position: relative;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/img/made/mob/cow_mob1x.png');
-  max-width: 480px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+// background-image: url('../images/img/gallery/mob/bg_milk_mob1x.png');
 }
+
