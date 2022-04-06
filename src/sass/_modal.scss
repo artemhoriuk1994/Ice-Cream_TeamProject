@@ -115,15 +115,15 @@
 
 .modal__container {
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .modal__text {
-  // font-family: $main-font;
   font-style: 14px;
   margin-bottom: 20px;
 }
 
-.modal__map {
+.modal__map,
+.modal__video {
   display: block;
   width: 100%;
   border: none;
