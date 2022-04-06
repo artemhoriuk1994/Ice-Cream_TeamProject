@@ -1,5 +1,6 @@
 .hero {
   background-color: #ffb8ca;
+  padding-top: 54px;
 }
 
 .hero-content {
@@ -116,8 +117,9 @@
 }
 
 .hero-desc {
-  display: flex;
+  // display: flex;
   margin-top: 40px;
+  display: none;
 
   @include tab {
     margin-top: 20px;
@@ -130,10 +132,12 @@
   &__img {
     width: 213px;
     height: 216px;
+    display: none;
 
     @include tab {
       width: 152px;
       height: 154px;
+      display: block;
     }
 
     @include desk {
