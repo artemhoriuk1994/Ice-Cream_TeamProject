@@ -159,6 +159,7 @@
     }
 }
 .product__button {
+    border: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -170,8 +171,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: $accent-color;
     &:hover {
-        fill: $second-title-color;
+        fill: $accent-color;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
         transition-property: box-shadow;
