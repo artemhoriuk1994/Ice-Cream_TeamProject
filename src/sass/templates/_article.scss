@@ -1,7 +1,7 @@
 .article {
   font-family: 'Titan One';
   font-weight: 400;
-  font-size: 38px;
+  font-size: 26px;
   line-height: 1.16;
 
   @include tab {
@@ -16,19 +16,19 @@
 
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 
   &__passion {
-    color: #D41443;
-    font-size: 58px;
-    line-height: 0.91;
+    color: #d41443;
+    font-size: 48px;
+    line-height: 0.97;
 
-    @include tab{
+    @include tab {
       font-size: 34px;
       line-height: 0.91;
     }
 
-    @include desk{
+    @include desk {
       font-size: 58px;
     }
   }
