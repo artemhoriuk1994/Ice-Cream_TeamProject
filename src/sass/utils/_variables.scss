@@ -1,0 +1,50 @@
+/*fonts variables*/
+$main-font: 'DM Sans',
+sans-serif;
+/* Основной шрифт */
+$title-font: 'Titan One',
+cursive;
+/* Шрифт заголовков */
+/*color variables*/
+$main-text-color: #000000;
+/* Основной цвет текста */
+$second-text-color: #ffffff;
+/* Вторичный цвет текста */
+$third-text-color: #907e82;
+/* Третий цвет текстка */
+$accent-color: #d41443;
+/* Цвет акцента */
+$primary-title-color: #d41443;
+/* Основной цвет заголовков */
+$second-title-color: #ffa5ba;
+/* Вторичный цвет заголовков*/
+$primary-btn-color: #ffffff;
+/*Основной цвет кнопок */
+$second-btn-color: #d41443;
+/* Вторичный цвет кнопок */
+$hover-btn-color:#ECEBEB;
+$main-bgc: #fff5f6;
+/* Основной цвет фона */
+$second-bgc: #ffa5ba;
+/* Вторичный цвет фона  */
+$third-bgc: #ffb8ca;
+/*Третий  цвет фона  */
+$four-bgc: #ffffff;
+/* Четвертный цвет фона  */
+$five-bgc: #fafafa;
+/* Пятый цвет фона (отзывы) */
+$six-bgc: #e1e1e1;
+/* Шестой цвет фона (бордер под отзывами) */
+$mobile-bgc: #e17992;
+/*Цвет фона мобильного меню*/
+$mobile-border-color: #e18298;
+/* Цвет бордера в моб меню */
+$product-one-bgc: #ffb8ca;
+/* Фон первого продукта */
+$product-second-bgc: #f0d1a5;
+/* Фон второго продукта */
+$product-third-bgc: #c2e297;
+/* Фон третьего продукта */
+$contacts-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+/*animation variables */
+$casual-cubic: cubic-bezier(0.4, 0, 0.2, 1);

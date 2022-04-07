@@ -2,6 +2,12 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: $main-font;
+  padding: 0;
+  margin: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -30,11 +36,51 @@ ul {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
+
+span {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   min-width: 320px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+@mixin size($size) {
+  @if $size==mobile {
+    @media (min-width: 480px) {
+      @content;
+    }
+  } @else if $size==tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $size==desktop {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
 }

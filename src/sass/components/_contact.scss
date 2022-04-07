@@ -1,0 +1,402 @@
+.contacts {
+    position: relative;
+    min-width: 320px;
+    padding-top: 58px;
+    padding-bottom: 48px;
+    background: linear-gradient(to top, $main-bgc 75.2%, $four-bgc 24.8%);
+
+    @include size (tablet) {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        background: linear-gradient(to top, $main-bgc 72%, $four-bgc 28%);
+    }
+
+    @include size (desktop) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-image: linear-gradient(to top, $main-bgc 75%, $four-bgc 25%);
+
+        .contacts--container {
+            background-image: url('../images/img/contact/sectionbg.png');
+            background-repeat: no-repeat;
+            background-position: 0% 52%;
+        }
+    }
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   @include size (tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        margin-bottom: 40px;
+    }
+    @include size (desktop) {
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+}
+
+.contacts-item {
+    width: 280px;
+    border-radius: 24px;
+    z-index: 1;
+    background-color: $four-bgc;
+    box-shadow: $contacts-box-shadow;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &:last-child {
+        margin-bottom: 32px;
+    }
+
+    @include size (tablet) {
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    @include size (tablet) {
+        width: 224px;
+    }
+
+    @include size (desktop) {
+        width: 395px;
+    }
+}
+
+.wrapperr {
+    width: 216px;
+    margin: 40px 32px;
+
+    @include size (tablet) {
+        width: 160px;
+    }
+
+    @include size (desktop) {
+        margin: 40px;
+        width: 315px;
+       
+    }
+}
+
+
+.contacts-item__header {
+    background-color: $product-second-bgc;
+    color: $second-text-color;
+    border-radius: 4px;
+    width: 80px;
+    height: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    list-style: calc(22 / 12);
+    padding-top: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include size (tablet) {
+        width: 73px;
+        height: 28px;
+        padding-top: 0px;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+        margin-bottom: 32px;
+    }
+
+    @include size (desktop) {
+        padding-top: 0px;
+        width: 75px;
+        
+    }
+
+    &--foodtruck {
+        width: 130px;
+        background-color: $product-third-bgc;
+
+        @include size (tablet) {
+            width: 138px;
+        }
+    }
+}
+
+.contacts-item__city {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: calc(22 / 12);
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+
+    @include size (tablet) {
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: calc(26 / 14);
+    }
+
+    @include size (desktop) {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+    }
+}
+
+.contacts-item__info {
+    position: relative;
+    width: 179px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: calc(18 / 12);
+    color: $third-text-color;
+    margin-bottom: 48px;
+
+    @include size (tablet) {
+        width: 159px;
+        margin-bottom: 64px;
+        font-size: 14px;
+        line-height: calc(22 / 14);
+    }
+
+    @include size (desktop) {
+        width: 250px;
+         font-size: 16px;
+        line-height: calc(25/ 16);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 216px;
+        height: 1px;
+        background-color: $six-bgc;
+        margin-top: 24px;
+
+        @include size (tablet) {
+            width: 160px;
+            margin-top: 32px;
+        }
+
+        @include size (desktop) {
+            width: 315px;
+        }
+    }
+}
+
+.contacts-item__workday {
+    width: 107px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: calc(22 / 12);
+    color: $main-text-color;
+
+    @include size (tablet) {
+        width: 122px;
+        font-size: 14px;
+        line-height: calc(26 / 14);
+    }
+
+    @include size (desktop) {
+        width: 137px;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+    }
+
+    &--diffsize {
+        width: 120px;
+
+        @include size (tablet) {
+            width: 132px;
+            font-size: 14px;
+            line-height: calc(26 / 14);
+        }
+
+        @include size (desktop) {
+            width: 156px;
+            font-size: 16px;
+            line-height: calc(30 / 16);
+        }
+    }
+}
+
+.contacts-item__worktime {
+    width: 162px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: calc(22 / 12);
+    color: $second-title-color;
+    margin-bottom: 8px;
+
+    @include size (tablet) {
+        margin-bottom: 12px;
+        width: 160px;
+        font-size: 14px;
+        line-height: calc(26 / 14);
+    }
+
+    @include size (desktop) {
+        width: 167px;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+    }
+
+    &--bigmargin {
+        margin-bottom: 48px;
+
+        @include size (tablet) {
+            margin-bottom: 64px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 216px;
+            height: 1px;
+            background-color: $six-bgc;
+            margin-top: 24px;
+
+            @include size (tablet) {
+                width: 160px;
+                margin-top: 32px;
+            }
+
+            @include size (desktop) {
+                width: 315px;
+                margin-top: 32px;
+            }
+        }
+    }
+}
+
+
+.contacts-item__details {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: calc(18 / 12);
+    color: $third-text-color;
+
+    @include size (tablet) {
+        font-size: 14px;
+        line-height: calc(20 / 14);
+    }
+
+    @include size (desktop) {
+        font-size: 16px;
+        line-height: calc(22 / 14);
+    }
+}
+
+.contacts-btn {
+    position: relative;
+    padding-right: 30px;
+    padding-left: 17px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+    text-align: center;
+    width: 161px;
+    height: 44px;
+    color: $second-text-color;
+    background-color: $second-btn-color;
+    border-radius: 22px;
+    border: none;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: $contacts-box-shadow;
+        transition: box-shadow 250ms $casual-cubic;
+    }
+
+    
+
+    &:last-child {
+        margin-top: 10px;
+    }
+
+    @include size (tablet) {
+        width: 191px;
+        padding-right: 52px;
+        padding-left: 30px;
+        margin-right: 14.5px;
+
+        &:last-child {
+            margin-top: 0px;
+        }
+    }
+
+    @include size (desktop) {
+        width: 198px;
+        padding-right: 54px;
+        padding-left: 35px;
+    }
+
+    &--secondary {
+       padding-left: 32px;
+       padding-right: 48px;
+       @include size (tablet){
+           padding-left: 37px;
+           padding-right: 56px;
+       }
+       @include size (desktop) {
+           padding-left: 39px;
+           padding-right: 58px;
+       }
+        color: $second-btn-color;
+        background-color: $primary-btn-color;
+    
+    
+        &:hover,
+        &:focus {
+            background-color: $hover-btn-color;
+            transition: box-shadow 250ms $casual-cubic,
+                background-color 250ms $casual-cubic;
+        }
+    }
+    &__icon {
+        position: absolute;
+        right: 18px;
+        top: 16px;
+        fill: currentColor;
+
+        @include size (tablet) {
+            right: 34px;
+        }
+
+        @include size (desktop) {
+            right: 36px;
+        }
+    }
+    &__icon--icon-second {
+        right: 31px;
+        @include size (tablet) {
+            right: 38px;
+        }
+        @include size (desktop) {
+            right: 40px;
+        }
+
+    }
+}
+
+.btn-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include size (tablet) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

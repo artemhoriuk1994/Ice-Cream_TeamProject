@@ -1,0 +1,232 @@
+.customer-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 642px;
+  padding-top: 80px;
+  // padding-bottom: 48px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    // max-height: 522px;
+    padding-top: 80px;
+    // padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    // max-height: 590px;
+    padding-top: 114px;
+    // padding-bottom: 120px;
+  }
+}
+
+.customer__slider {
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+}
+.customer__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customer__list {
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  height: 308px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 32px;
+  margin-bottom: 36px;
+  padding: 46px 50px 27px 50px;
+  max-width: 280px;
+
+  @media screen and (min-width: 768px) {
+    height: 164px;
+    max-width: 620px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    padding: 20px 6px 36px 6px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1034px;
+    height: 138px;
+    margin-top: 22px;
+    margin-bottom: 36px;
+    padding: 32px 106px;
+  }
+}
+
+/* Оболочка текста текст + линии */
+.customer__line {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  max-width: 180px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 608px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 822px;
+  }
+}
+
+.customer__line::before {
+  content: '';
+  position: absolute;
+  height: 40px;
+  width: 54px;
+  background-size: 54px 40px;
+  background-position: top left;
+  background-image: url('../images/sprite.svg#icon-lapki');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -10px;
+  left: -30px;
+  display: inline-block;
+
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    background-size: 60px 40px;
+    left: 6px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 54px;
+    background-size: 54px 40px;
+    left: 20px;
+  }
+}
+/* Текст отзыва */
+.customer__text {
+  display: flex;
+  position: relative;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $main-text-color;
+  padding-left: 11px;
+  padding-right: 11px;
+  align-items: flex-start;
+  background-image: repeating-linear-gradient(
+    $six-bgc,
+    $five-bgc 1px,
+    transparent 1px,
+    transparent 31px
+  );
+  // background-image: linear-gradient(to bottom, #FAFAFA 24%, #E1E1E1 22%, #E1E1E1 23%, #FAFAFA 26%, #FAFAFA 52%, #E1E1E1 52%, #FAFAFA 53%, #FAFAFA 84%, #E1E1E1 84%, #E1E1E1 85%, #FAFAFA 68%);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.14;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.88;
+    padding-left: 35;
+    padding-right: 35px;
+    // background-image: linear-gradient(to bottom, #FAFAFA 24%, #E1E1E1 22%, #E1E1E1 23%, #FAFAFA 26%, #FAFAFA 52%, #E1E1E1 52%, #FAFAFA 53%, #FAFAFA 84%, #E1E1E1 84%, #E1E1E1 85%, #FAFAFA 68%);
+  }
+}
+
+/* Точки под текстом */
+.customer__dot {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ФИО комитта */
+.customer__title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: $main-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.85;
+  }
+}
+
+.slick-next,
+.slick-prev,
+.slick-arrow {
+  visibility: hidden;
+  display: none;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+/* Элемент точки, активная точка(домик) */
+.slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  border: 0;
+  font-size: 0px;
+}
+
+.slick-dots li.slick-active button {
+  background-image: url('../images/sprite.svg#home');
+  background-color: $second-text-color;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

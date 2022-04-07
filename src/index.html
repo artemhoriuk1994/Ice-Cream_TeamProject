@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>IceCream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -11,11 +18,30 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
-
+    <!-- <include src="./partials/example.html"></include> -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/product.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer.html"></include>
+    <include src="./partials/contact.html"></include>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modal-buy-now.html"></include>
+    <include src="./partials/modal-read-more.html"></include>
+    <include src="./partials/modal-our-locations.html"></include>
+    <include src="./partials/modal-franchise.html"></include>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script src="./mobile-menu.js"></script>
+    <script src="./modal.js"></script>
+    <script src="./slick.min.js"></script>
+    <script src="./slick.js"></script>
+    <script src="./anchor.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   </body>
 </html>
