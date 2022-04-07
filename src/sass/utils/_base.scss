@@ -1,9 +1,13 @@
 html {
   box-sizing: border-box;
 }
+
 body {
   font-family: $main-font;
+  padding: 0;
+  margin: 0;
 }
+
 *,
 *::before,
 *::after {
@@ -39,6 +43,11 @@ img {
   width: 100%;
 }
 
+span {
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -46,7 +55,7 @@ a {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0px auto;
+  margin: 0 auto;
   min-width: 320px;
   @media screen and (min-width: 480px) {
     width: 480px;
