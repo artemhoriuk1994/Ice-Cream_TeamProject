@@ -1,0 +1,105 @@
+.advantages {
+    background-color: $main-bgc;
+    padding-top: 20;
+    padding-bottom: 80px;
+    
+    @include size(tablet) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    }
+    @include size(desktop) {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    }
+    }
+    .advantages__list {
+    @include size(tablet) {
+    display: flex;
+    justify-content: space-between;
+    }
+    }
+    .advantages__item {
+    width: 230px;
+    margin: 0 auto;
+    text-align: center;
+    @include size(tablet) {
+    width: 200px;
+    margin: 0;
+    }
+    @include size(desktop) {
+    width: 300px;
+    }
+    &:not(:last-child) {
+    margin-bottom: 32px;
+    @include size(tablet) {
+    margin-bottom: 0;
+    }
+    }
+    }
+    .advantages__item::before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: auto;
+    margin-bottom: 16px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-size: auto;
+    
+    @include size(tablet) {
+    margin-bottom: 36px;
+    }
+    @include size(desktop) {
+    margin-bottom: 40px;
+    }
+    }
+    .advantages__item--icon-milk::before {
+    background-image: url(../images/img/advantages/desktop/icon-desc.png);
+    }
+    .advantages__item--icon-apple::before {
+    background-image: url(../images/img/advantages/desktop/icon-desc2.png);
+    }
+    .advantages__item--icon-heart::before {
+    background-image: url(../images/img/advantages/desktop/icon1-desc.png);
+    }
+    
+    .advantages__number {
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: $accent-color;
+    text-transform: uppercase;
+    
+    @include size(tablet) {
+    margin-bottom: 13px;
+    font-size: 48px;
+    line-height: 1.5;
+    }
+    @include size(desktop) {
+    margin-bottom: 16px;
+    font-size: 58px;
+    line-height: 1.14;
+    }
+    }
+    .advantages__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #000000;
+    
+    @include size(tablet) {
+    font-size: 14px;
+    line-height: 1.74;
+    }
+    @include size(desktop) {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+    }
+    }

@@ -163,8 +163,11 @@
 }
 
 // BUY NOW//
-.modal__form {
-  max-width: 528px;
+.modal__form{
+  &--width{
+    width: 528px;
+    max-width: 528px;
+  }  
 }
 .modal {
   @include size(tablet) {
@@ -179,6 +182,7 @@
   position: relative;
   max-width: 480px;
   width: 100%;
+  margin: 30px;
   &:focus-within .form__input {
     border: 2px solid $accent-color;
   }
