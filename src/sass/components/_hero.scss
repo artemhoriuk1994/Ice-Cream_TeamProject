@@ -1,6 +1,5 @@
 .hero {
   background-color: #ffb8ca;
-  padding-top: 54px;
 }
 
 .hero-content {
@@ -8,11 +7,6 @@
   position: relative;
 
   @include tab {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  @include desk {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -117,9 +111,8 @@
 }
 
 .hero-desc {
-  // display: flex;
+  display: flex;
   margin-top: 40px;
-  display: none;
 
   @include tab {
     margin-top: 20px;
@@ -132,12 +125,10 @@
   &__img {
     width: 213px;
     height: 216px;
-    display: none;
 
     @include tab {
       width: 152px;
       height: 154px;
-      display: block;
     }
 
     @include desk {
@@ -184,7 +175,7 @@
 
 .hero-elipse {
   position: absolute;
-  left: 517px;
+  left: 502px;
   bottom: 76px;
   height: 534px;
   width: 534px;
@@ -192,14 +183,14 @@
   @include tab {
     height: 335px;
     width: 335px;
-    left: 248px;
+    left: 233px;
     bottom: 40px;
   }
 
   @include desk {
     height: 534px;
     width: 534px;
-    left: 517px;
+    left: 502px;
     bottom: 76px;
   }
 
@@ -210,24 +201,30 @@
 
 .hero-icecream {
   position: absolute;
-  width: 236px;
-  height: 557px;
-  padding: 0 408px 0 636px;
+  width: 100%;
 
+  @include tab {
+    padding-left: 292px;
+  }
+
+  @include desk {
+    padding-left: 621px;
+  }
+
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero-icecream img {
   @include tab {
     width: 143px;
     height: 336px;
-    padding: 0 322px 0 303px;
   }
 
   @include desk {
     width: 236px;
     height: 557px;
-    padding: 0 408px 0 636px;
   }
-
-  bottom: 0;
-  z-index: 1;
 }
 
 .hero-right {
@@ -254,15 +251,6 @@
 
   &__item {
     position: relative;
-    width: 72px;
-
-    @include tab {
-      width: 43px;
-    }
-
-    @include desk {
-      width: 72px;
-    }
   }
 
   &__item + &__item {
@@ -275,6 +263,11 @@
     @include desk {
       margin-top: 15px;
     }
+  }
+
+  &__info {
+    padding-right: 18px;
+    padding-top: 4px;
   }
 
   &__amount {
@@ -296,6 +289,7 @@
     color: #d41443;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    text-align: right;
     z-index: 1;
     opacity: 0.99;
   }
@@ -319,6 +313,26 @@
     background-color: #ffffff;
     right: 0;
     z-index: 0;
+  }
+
+  &__name {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    @include tab {
+      font-size: 8px;
+      line-height: 1.25;
+    }
+
+    @include desk {
+      font-size: 14px;
+      line-height: 1.29;
+    }
+
+    text-align: right;
+    color: #ffffff;
   }
 }
 
