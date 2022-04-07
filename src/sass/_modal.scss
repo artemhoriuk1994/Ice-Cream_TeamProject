@@ -205,7 +205,8 @@
   padding: 2px 2px 2px 40px;
   font-weight: 400;
   font-size: 14px;
-  line-height: (18/14);
+  line-height: calc(18 / 14);
+
   &:not(:placeholder-shown) + .form__label {
     top: -9px;
     background-color: #fff;
