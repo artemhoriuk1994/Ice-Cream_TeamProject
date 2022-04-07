@@ -7,9 +7,24 @@
     <div class="container__media">
       <div class="container__pic">
         <picture class="container__pic">
-          <source srcset="" media="(min-width:1280px)" />
-          <source srcset="" media="(min-width:768px)" />
-          <source srcset="" media="(max-width:767px)" />
+          <source
+            srcset="
+              ./images/img/made/desktop/cow_desk1x.png 1x,
+              ./images/img/made/desktop/cow_desk2x.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/img/made/tablet/cow_tab1x.png 1x,
+              ./images/img/made/tablet/cow_tab2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="./images/img/made/mob/cow_mob1x.png 1x, ./images/img/made/mob/cow_mob2x.png 2x"
+            media="(max-width:767px)"
+          />
           <img src="./images/img/made/desktop/cow_desk1x.png" alt="" />
         </picture>
       </div>
@@ -18,6 +33,7 @@
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
           lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
         </p>
+        <div class="container__becground"></div>
         <p class="container__content">
           Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
           in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
