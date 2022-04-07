@@ -1,5 +1,5 @@
 .gallery {
-  max-width: 480px;
+  max-width: 100%;
   height: 122px;
   margin-right: auto;
   margin-left: auto;
@@ -17,7 +17,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     height: 264px;
     background-image: url('../images/img/gallery/tablet/galery-tab1x-rb.png'), linear-gradient(to bottom, rgba(255, 245, 246, 1) 50%, rgba(255, 255, 255, 1) 50%);
 
@@ -31,7 +30,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
     height: 430px;
     background-image: url('../images/img/gallery/desktop/galery-desc1x-rb.png'), linear-gradient(to bottom, rgba(255, 245, 246, 1) 50%, rgba(255, 255, 255, 1) 50%);
 
