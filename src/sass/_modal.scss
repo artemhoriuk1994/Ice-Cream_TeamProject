@@ -1,6 +1,6 @@
 .backdrop {
   position: fixed;
-  z-index: 50;
+  z-index: 1000;
   width: 100vw;
   height: 100vh;
   left: 0px;
@@ -22,7 +22,7 @@
 
 .modal {
   position: absolute;
-  z-index: 60;
+  z-index: 1010;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -163,71 +163,71 @@
 }
 
 // BUY NOW//
-.modal__form{
+.modal__form {
   max-width: 528px;
 }
-.modal{
-  @include size (tablet){
+.modal {
+  @include size(tablet) {
     max-width: 528px;
   }
-  @include size (desktop){
+  @include size(desktop) {
     max-width: 726px;
   }
 }
-.form__field{
+.form__field {
   display: block;
   position: relative;
   max-width: 480px;
   width: 100%;
-  &:focus-within .form__input{
+  &:focus-within .form__input {
     border: 2px solid $accent-color;
   }
-  &:focus-within .icon-container{
-    color:#D41443;
+  &:focus-within .icon-container {
+    color: #d41443;
   }
-  &:focus-within .form__label{
-    top:-9px;
+  &:focus-within .form__label {
+    top: -9px;
     background-color: #fff;
     padding: 3px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     color: $accent-color;
   }
-  &:focus-within .form__label::after .form__label::before{
+  &:focus-within .form__label::after .form__label::before {
     display: block;
   }
-  @include size (desktop){
-    max-width:528px;
+  @include size(desktop) {
+    max-width: 528px;
   }
 }
-.form__input{
+.form__input {
   border-radius: 6px;
   padding: 2px 2px 2px 40px;
   font-weight: 400;
   font-size: 14px;
   line-height: (18/14);
-  &:not(:placeholder-shown) + .form__label{
-    top:-9px;
+  &:not(:placeholder-shown) + .form__label {
+    top: -9px;
     background-color: #fff;
     padding: 3px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
   }
 }
-.form__label{
+.form__label {
   display: block;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left:40px;
+  left: 40px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   display: flex;
   align-items: center;
   text-align: center;
-  color:$second-title-color;
-  &::after{
+  color: $second-title-color;
+  &::after {
     content: '';
     display: none;
     position: absolute;
@@ -238,7 +238,7 @@
     background-color: #fff;
     margin-left: 2px;
   }
-  &::before{
+  &::before {
     content: '';
     display: none;
     position: absolute;
@@ -250,10 +250,10 @@
     margin-left: 2px;
   }
 }
-.icon-container{
-  color:$second-title-color ;
+.icon-container {
+  color: $second-title-color;
 }
-.form__icon{
+.form__icon {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -262,4 +262,3 @@
   height: 44px;
   fill: currentColor;
 }
-
