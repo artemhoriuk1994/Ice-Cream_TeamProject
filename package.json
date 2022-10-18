@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Volodymyr-Stepaniuk.github.io/FiveDev-Project",
+  "homepage": "https://artemhoriuk1994.github.io/FiveDev-Project",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /FiveDev-Project/"
