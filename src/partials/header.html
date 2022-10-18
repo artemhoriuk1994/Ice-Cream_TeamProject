@@ -1,6 +1,6 @@
 <header class="navigation">
   <a id="menu"></a>
-  <div class=" menu ">
+  <div class=" menu " data-menu>
     <div class="container inner">
       <a href="#menu" class="logo__link"><img src="./images/img/header/logo.png" alt="logo" /> </a>
       <div class="menu-container js-menu-container" id="mobile-menu">
@@ -38,14 +38,13 @@
 
       </div>
       <div class="btn__collection">
-        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button type="button" class="menu-toggle js-open-menu " aria-expanded="false" aria-controls="mobile-menu">
           <svg width="20" height="12" aria-label="кнопка мобильного меню">
             <use class="icon__menu" href="./images/sprite.svg#icon-Burger"></use>
-
           </svg>
         </button>
         <div class="btn__visible">
-          <button class="submenu__btn submenu__btn--visible"  data-modal-10-open>
+          <button class="submenu__btn submenu__btn--visible" data-modal-10-open>
             Buy Now <span class="icon__arrow"> &#62;</span>
           </button>
         </div>
