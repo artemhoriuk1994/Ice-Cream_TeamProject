@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://artemhoriuk1994.github.io/FiveDev-Project",
+  "homepage": "https://artemhoriuk1994.github.io/Ice-Cream_TeamProject",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /FiveDev-Project/"
