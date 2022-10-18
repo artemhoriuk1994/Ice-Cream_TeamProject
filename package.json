@@ -6,7 +6,7 @@
   "homepage": "https://artemhoriuk1994.github.io/Ice-Cream_TeamProject",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /FiveDev-Project/"
+    "build": "parcel build src/*.html --public-url /Ice-Cream_TeamProject/"
   },
   "repository": {
     "type": "git",
